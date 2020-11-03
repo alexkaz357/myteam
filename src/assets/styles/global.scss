@@ -1,0 +1,27 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+@import "setup/typography.scss";
+
+// Basics
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+@import "basics/links.scss";
+@import "basics/buttons.scss";
+
+// Components
+@import "./components/nav-bar";
+@import "./components/get-started";
+@import "./components/footer";
+
+@import "./components/home/home-header";
+@import "./components/home/home-first-section";
+@import "./components/home/home-secound-section";
+
+@import "./components/about/about-header";
+@import "./components/about/about-first-section";
+@import "./components/about/about-secound-section";
+
+@import "./components/contact/contact-header";

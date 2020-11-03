@@ -1,0 +1,143 @@
+.home-secound-section {
+  height: 745px;
+  background-color: #004047;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  color: #ffffff;
+
+  .section-header {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+
+    &.first {
+      padding-top: 140px;
+    }
+
+    span {
+      color: #79c8c7;
+    }
+  }
+
+  .all-persons {
+    display: grid;
+    grid-template-columns: repeat(3, 349px);
+    gap: 30px;
+    margin-top: 63px;
+
+    .about-person {
+      text-align: center;
+      position: relative;
+    }
+
+    .quotes {
+      margin-bottom: -25px;
+    }
+
+    .text-about-person {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 25px;
+    }
+
+    .person-name {
+      margin-top: 27px;
+      color: #79c8c7;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+    }
+
+    .person-job {
+      font-style: italic;
+      margin-top: 2px;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+
+    .person-img {
+      margin-top: 32px;
+      width: 60px;
+      height: 60px;
+      border: 2px solid #c4fffe;
+      border-radius: 100px;
+    }
+  }
+
+  .section-img-1 {
+    position: absolute;
+  }
+
+  .section-img-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .section-header-tablet {
+    display: none;
+  }
+}
+
+@media (max-width:1050px) and (min-width:551px) {
+  .home-secound-section {
+    height: 1199px;
+
+    .section-header {
+      display: none;
+    }
+
+    .section-header-tablet {
+      display: block;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+      padding-top: 100px;
+      text-align: center;
+      width: 408px;
+      margin: auto;
+
+      span {
+        color: #79c8c7;
+      }
+    }
+
+    .all-persons {
+      grid-template-columns: 1fr;
+
+      .person-img {
+        margin-top: 16px;
+      }
+
+      .person-name {
+        margin-top: 44px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .home-secound-section {
+    height: 1410px;
+
+    .section-header {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    .all-persons {
+      grid-template-columns: 1fr;
+      margin-top: 52px;
+
+      .person-img {
+        margin-top: 16px;
+      }
+
+      .person-name {
+        margin-top: 22px;
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.about-secound-section {
+  height: 437px;
+  background-color: #012f34;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  color: #ffffff;
+
+  .section-header {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-top: 140px;
+    text-align: center;
+  }
+
+  .img-container {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+
+    .img:not(:last-child) {
+      margin-right: 80px;
+    }
+
+    .img-1 {
+      width: 165px;
+      height: 28px;
+    }
+
+    .img-2 {
+      width: 184px;
+      height: 23px;
+      ;
+    }
+
+    .img-3 {
+      width: 180px;
+      height: 28px;
+    }
+
+    .img-4 {
+      width: 165px;
+      height: 28px;
+    }
+
+    .img-5 {
+      width: 98px;
+      height: 45px;
+    }
+  }
+
+  .section-img {
+    position: absolute;
+  }
+
+  .about-mobile-bottom {
+    display: none;
+  }
+
+  .about-tablet {
+    display: none;
+  }
+}
+
+@media (max-width:1050px) and (min-width:551px) {
+
+  .about-secound-section {
+    height: 308px;
+
+    .container {
+      max-width: 688px;
+    }
+
+    .section-header {
+      padding: 100px 0 52px 0;
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    .img-container {
+      margin: 0;
+
+      .img:not(:last-child) {
+        margin-right: 49px;
+      }
+
+      .img-1 {
+        width: 103px;
+        height: 17px;
+      }
+
+      .img-2 {
+        width: 114px;
+        height: 14px;
+        ;
+      }
+
+      .img-3 {
+        width: 112px;
+        height: 17px;
+      }
+
+      .img-4 {
+        width: 103px;
+        height: 17px;
+      }
+
+      .img-5 {
+        width: 61px;
+        height: 28px;
+      }
+    }
+
+    .about-tablet {
+      position: absolute;
+    }
+
+    .section-img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .about-secound-section {
+    height: 632px;
+
+    .section-header {
+      padding: 88px 0 64px 0;
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    .img-container {
+      flex-direction: column;
+      margin: 0;
+
+      .img:not(:last-child) {
+        margin: 0 0 56px 0;
+      }
+    }
+
+    .section-img {
+      display: none;
+    }
+
+    .about-mobile-bottom {
+      display: block;
+      position: absolute;
+    }
+
+    .about-tablet {
+      display: none;
+    }
+  }
+}

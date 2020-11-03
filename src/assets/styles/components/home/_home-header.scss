@@ -1,0 +1,161 @@
+.home-header {
+  background-color: #014e56;
+  height: 700px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  padding-top: 250px;
+
+  .container {
+    position: relative;
+    height: 100%;
+  }
+
+  .header-text {
+    justify-content: space-between;
+
+    .main-text {
+      height: 190px;
+      width: 635px;
+      font-size: 100px;
+      line-height: 100px;
+
+      span {
+        color: #f67e7e;
+      }
+    }
+
+    .secondary-container {
+      height: 190px;
+      width: 445px;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .secondary-line {
+        width: 50px;
+        height: 4px;
+        background-color: #79c8c7;
+      }
+
+      .secondary-text {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .header-img-1 {
+    position: absolute;
+    left: -100px;
+    top: 250px;
+  }
+
+  .header-img-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (max-width:1050px) and (min-width:551px) {
+
+  .home-header {
+    padding-top: 224px;
+
+    .header-text {
+      flex-direction: column;
+
+      .main-text {
+        width: auto;
+        height: 107px;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 56px;
+        text-align: center;
+        margin: 0 auto 29px;
+      }
+
+      .secondary-container {
+        margin: auto;
+
+        .secondary-line {
+          display: none;
+        }
+
+        .secondary-text {
+          width: 457px;
+          height: 79px;
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 28px;
+          text-align: center;
+        }
+      }
+    }
+
+    .header-img-1 {
+      display: none;
+    }
+
+    .header-img-2 {
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .home-header {
+    height: 567px;
+    text-align: center;
+    padding-top: 160px;
+
+    .header-text {
+      flex-direction: column;
+
+      .main-text {
+        width: 327px;
+        height: 75px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 23px;
+      }
+
+      .secondary-container {
+        width: 327px;
+        height: 107px;
+        display: block;
+
+        .secondary-line {
+          display: none;
+        }
+
+        .secondary-text {
+          width: 327px;
+          height: 107px;
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 28px;
+        }
+      }
+    }
+
+    .header-img-1 {
+      display: none;
+    }
+
+    .header-img-2 {
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
